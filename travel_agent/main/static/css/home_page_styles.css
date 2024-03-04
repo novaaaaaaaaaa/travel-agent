@@ -1,0 +1,47 @@
+html {
+    overflow-x: hidden;
+}
+
+.grid-container {
+    margin: 20px 0;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 40vh;
+}
+
+#image_item {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#plane_image {
+    width: 100%;
+    height: 100%;
+}
+
+#text_container_item {
+    padding-left: 20px;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
+    background-image: linear-gradient(to right, #ffffffff, #ffffffff, #ffffffff, #ffffffff, #ffffff00);
+}
+
+#text {
+    width: 60%;
+}
+
+#featured_destinations {
+    margin: 20px;
+}
+
+#destination_cards {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.destination_button {
+    background-color: #082b4e;
+    color: #ffffff;
+}
